@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "terraform-state-rg"
-    storage_account_name = "tfdevbackend2024piyush"
+    storage_account_name = "terrakubeprakhar"
     container_name      = "tfstate"
     key                 = "dev.tfstate"
   }
@@ -9,4 +9,5 @@ terraform {
 
 provider "azurerm" {
   features {}
+  subscription_id = "3fb1c972-649b-4efa-93bf-967851008fb4"
 }
